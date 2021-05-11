@@ -1,6 +1,6 @@
 /** @type {import('@sveltejs/kit').Config} */
 
-const vercel = require(‘@sveltejs/adapter-vercel’);
+import vercel from '@sveltejs/adapter-vercel';
 
 const config = {
 	kit: {

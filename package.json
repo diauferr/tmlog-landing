@@ -1,12 +1,11 @@
 {
-  "name": "~TODO~",
+  "name": "TMLOG",
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
     "preview": "svelte-kit preview",
-    "lint": "prettier --check --plugin-search-dir=. .",
-    "format": "prettier --write --plugin-search-dir=. ."
+    "@sveltejs/adapter-vercel": "next"
   },
   "devDependencies": {
     "@sveltejs/kit": "next",
@@ -14,5 +13,8 @@
     "prettier-plugin-svelte": "^2.2.0",
     "svelte": "^3.34.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@sveltejs/adapter-vercel": "^1.0.0-next.17"
+  }
 }
