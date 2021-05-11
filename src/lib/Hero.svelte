@@ -7,7 +7,7 @@
         <h1 class="pb-3 mr-6 text-3xl sm:text-5xl font-opensans font-semibold text-right uppercase">{slogan.text}</h1>
         {/each}
 </div>
-<img src="/static/wave.svg" alt="" class="w-full">
+<img src="/wave.svg" alt="" class="w-full">
 <style>
     #hero {
        background-image: url('/static/anim.svg');
