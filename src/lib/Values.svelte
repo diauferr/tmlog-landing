@@ -12,7 +12,7 @@ const {
         <img src={list.IMAGE_URL} alt="">
         <h1 class="pl-2 py-6 text-2xl font-semibold font-opensans">{list.TITLE}</h1>
     </div>
-    <p class="mb-4 p-8 border-2 rounded-md font-opensans">{list.DESCRIPTION}</p>
+    <p class="mb-4 p-8 border-2 rounded-md font-medium font-opensans">{list.DESCRIPTION}</p>
     {/each}
 </div>
 

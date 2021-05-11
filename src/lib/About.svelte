@@ -8,8 +8,8 @@ const {
 } = aboutData;
 </script>
 
-<div class="w-full h-auto flex flex-col">
-    <div class="flex flex-row justify-center items-center" id="teste">
+<div class="w-full h-auto flex flex-col" id="about-us">
+    <div class="flex flex-row justify-center items-center">
         <img src={IMAGE_URL} alt="" id="about-img">
         <h1 class="text-4xl font-semibold text-center py-5 pl-2 font-opensans">{HEADING}</h1>
     </div>

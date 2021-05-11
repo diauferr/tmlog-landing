@@ -8,7 +8,7 @@ const NAVBAR_DATA = [{
     },
     {
         id: 2,
-        url: "#services",
+        url: "#solutions",
         label: "Soluções"
     },
     {
@@ -18,7 +18,7 @@ const NAVBAR_DATA = [{
     },
     {
         id: 4,
-        url: "#footer",
+        url: "#contact",
         label: "Contato"
     }
 ];

@@ -8,7 +8,7 @@ const {
 } = solutionsData;
 </script>
 
-<div class="w-full h-auto">
+<div class="w-full h-auto" id="solutions">
     <div class="flex flex-row justify-center items-center">
         <img src="/think.svg" alt="" id="think">
         <h1 class="text-4xl font-semibold text-center py-5 font-opensans">{HEADING}</h1>
