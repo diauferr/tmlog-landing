@@ -19,7 +19,7 @@ const {
         <h2 class="text-white md:px-12 md:pb-4">{list}</h2>
         <br>
         {/each}
-        <img src="/static/logo-mini-white.svg" alt="" id="logo-mini">
+        <img src="/logo-mini-white.svg" alt="" id="logo-mini">
     </div>
 </div>
 
