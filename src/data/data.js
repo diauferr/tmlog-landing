@@ -1,5 +1,5 @@
 /**src/Data/data.js**/
-const HEADER = "static/logo-full.svg";
+const HEADER = "logo-full.svg";
 
 const NAVBAR_DATA = [{
         id: 1,
@@ -23,7 +23,7 @@ const NAVBAR_DATA = [{
     }
 ];
 
-const MENU = "static/menu.svg";
+const MENU = "menu.svg";
 
 const HERO_SLOGAN = [{
         id: 1,
@@ -50,19 +50,19 @@ const SOLUTIONS_DATA = {
     SOLUTIONS_LIST: [{
             LABEL: "FRETE AÉREO",
             DESCRIPTION: "Com o transporte aéreo da TMLOG, sua empresa dispõe de muitos benefícios e ganha muito na relação distância x tempo.",
-            URL: "static/airlogo.svg",
+            URL: "airlogo.svg",
             PAGE: "/solutions/air"
         },
         {
             LABEL: "FRETE MARÍTIMO",
             DESCRIPTION: "A equipe TMLOG possui amplo conhecimento e experiência neste modal, proporcionando soluções flexíveis e diversificadas.",
-            URL: "static/sealogo.svg",
+            URL: "sealogo.svg",
             PAGE: "/solutions/sea"
         },
         {
             LABEL: "FRETE RODOVIÁRIO",
             DESCRIPTION: "O serviço de transporte rodoviário da TMLOG proporciona tranquilidade e segurança para os seus negócios.",
-            URL: "static/trucklogo.svg",
+            URL: "trucklogo.svg",
             PAGE: "/solutions/truck"
         }
     ]
@@ -71,7 +71,7 @@ const SOLUTIONS_DATA = {
 const ABOUT_DATA = {
     HEADING: "Quem somos?",
     TITLE: "Somos uma empresa com foco em ajudar os clientes a tomar as melhores decisões no ramo de agenciamento de cargas.",
-    IMAGE_URL: "static/teamwork.svg",
+    IMAGE_URL: "teamwork.svg",
     WHY_CHOOSE_US_LIST: [
         "Com o início das operações no Brasil em 2021 amparado por um time com expertise em agenciamento temos como objetivo oferecer aos nossos clientes análises de cada projeto integrando viabilidade e segurança.",
         "Nosso departamento de coordenação possui amplo conhecimento, gerenciando os embarques de ponta a ponta, fazendo com que os projetos fluam de forma ágil e eficaz de acordo com o perfil de cada cliente, prestando todo auxílio e suporte necessário do início ao fim do processo."
@@ -82,17 +82,17 @@ const VALUES_DATA = {
     VALUES_LIST: [{
             TITLE: "Missão",
             DESCRIPTION: "Temos como missão em entregar aos nossos clientes transparência, agilidade e comprometimento em todos nossos serviços. Nossa equipe formada por profissionais com amplo conhecimento na aérea de logística internacional estão preparados para executarem a melhor solução logística para nossos clientes. Para nós é essencial que além de tornar os projetos rentáveis, proporcionar um ambiente seguro, responsável e protegido para todos nossos colaboradores e clientes.",
-            IMAGE_URL: "static/success.svg"
+            IMAGE_URL: "success.svg"
         },
         {
             TITLE: "Confiança",
             DESCRIPTION: "A base entre grandes negócios de sucesso está na confiança, por isso nós da TMLOG trabalhamos levando com seriedade total transparência em nossos serviços, oferecendo serviços dedicados aos nossos clientes, entregando nosso comprometimento as metas estabelecidas. Acreditamos que a confiança é o resultado de cada ação trabalhada em conjunto com seriedade e total interação em cada passo realizado.",
-            IMAGE_URL: "static/trust.svg"
+            IMAGE_URL: "trust.svg"
         },
         {
             TITLE: "Responsabilidade",
             DESCRIPTION: "Com o comprometimento sendo uma de nossas bases, temos também em nossas principais ações a inovação, entusiasmo e flexibilidade atribuídos em nossos conceitos.",
-            IMAGE_URL: "static/responsiveness.svg"
+            IMAGE_URL: "responsiveness.svg"
         },
     ]
 };
