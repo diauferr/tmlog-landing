@@ -8,7 +8,7 @@ const {
 } = aboutData;
 </script>
 
-<img src="/waveabout.svg" alt="" class="w-full">
+<!-- <img src="/waveabout.svg" alt="" class="w-full"> -->
 <div class="w-full h-auto flex flex-col" id="about-us">
     <div class="flex flex-row justify-center items-center">
         <img src={IMAGE_URL} alt="" id="about-img">
@@ -27,7 +27,7 @@ const {
 <style>
 
 #about-us {
-    background-color: #ffffbf;
+    /* background-color: #ffffbf; */
 }
 
 #about-img {
