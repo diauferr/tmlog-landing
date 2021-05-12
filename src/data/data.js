@@ -104,7 +104,7 @@ const CONTACT_DATA = {
         "Você pode garantir toda a eficiência e segurança que a sua operação logística precisa. Entre em contato com a TMLOG para entender como podemos ajudar.",
         "Preencha o formulário e nossa equipe fará contato com uma oferta que cumpra seu prazo e com valor adequado ao seu negócio."
     ],
-    IMAGE_URL: "/form",
+    IMAGE_URL: "/form.svg",
     EMAIL_LIST: [
         "Nome Completo",
         "Endereço de Email",
