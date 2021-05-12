@@ -21,7 +21,7 @@ const {
                 <img src={list.URL} alt={list.LABEL} class="" />
             </div>
             <h4 class="py-2 font-semibold font-opensans">{list.LABEL}</h4>
-            <p class="py-2 text-justify font-opensans">{list.DESCRIPTION}</p>
+            <p class="py-2 text-center font-opensans">{list.DESCRIPTION}</p>
             <a class="py-2 underline font-medium font-opensans" href={list.PAGE}>{ALL_SOLUTIONS}</a>
         </div>
         {/each}
