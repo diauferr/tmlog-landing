@@ -24,7 +24,7 @@ const {
         <h1 class="text-white font-opensans pt-4">{DESCRIPTION}</h1>
     </div>
     <div class="w-auto h-auto flex flex-row items-center justify-center py-4">
-        <img src={IMAGE_LOCAL} alt="">
+        <img class="mx-4" src={IMAGE_LOCAL} alt="">
         <div class="w-auto h-auto">
             <div class="w-auto h-auto text-white font-opensans">
                 <h1>{CONTACT_DETAILS.CITY}</h1>
