@@ -59,7 +59,7 @@ const {
                 <option value="2">{IMPORTER_LIST[1]}</option>
             </select>
         </fieldset>
-        <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
+        <input type="hidden" name="_subject" id="email-subject" value="Solicitar Cotação">
     </fieldset>
     <input type="submit" value={EMAIL_LIST[8]} id="submit" class="uppercase font-bold">
 </form>
