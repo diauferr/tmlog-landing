@@ -54,7 +54,7 @@ const {
         <fieldset id="fs-frm-selects">
             <label for="importer">1. {EMAIL_LIST[7]}</label>
             <select name="Já realizou transporte internacional?" id="importer" required="">
-                <option value="Choose" selected="" disabled="">{SERVICES_LIST[0]}</option>
+                <option value={SERVICES_LIST[0]} selected="" disabled="">{SERVICES_LIST[0]}</option>
                 <option value={IMPORTER_LIST[0]}>{IMPORTER_LIST[0]}</option>
                 <option value={IMPORTER_LIST[1]}>{IMPORTER_LIST[1]}</option>
             </select>
