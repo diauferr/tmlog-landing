@@ -37,7 +37,7 @@ const {
         </div>
     </div>
     <div class="w-auto h-auto flex flex-col items-center justify-center py-4">
-        <h1 class="text-3x1 text-white font-opensans pb-4">{HEADING}</h1>
+        <h1 class="text-white font-opensans font-semidbold pb-4">{HEADING}</h1>
         <div class="flex flex-row">
             <a href="https://www.instagram.com/tmloglogistics/" target="_blank">
                 <img class="px-4" src={IMAGES_LIST[0]} alt="">
