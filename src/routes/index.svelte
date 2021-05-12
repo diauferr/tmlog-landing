@@ -5,6 +5,7 @@ import Solutions from '../lib/Solutions.svelte';
 import About from '../lib/About.svelte';
 import Values from '../lib/Values.svelte';
 import Contact from '../lib/Contact.svelte';
+import Footer from '../lib/Footer.svelte';
 
 import DATA from "../data/data";
 </script>
@@ -15,6 +16,7 @@ import DATA from "../data/data";
 <About aboutData={DATA.ABOUT_DATA}/>
 <Values valuesData={DATA.VALUES_DATA}/>
 <Contact contactData={DATA.CONTACT_DATA}/>
+<Footer footerData={DATA.FOOTER_DATA} socialData={DATA.SOCIAL_DATA}/>
 
 <style>
     html {

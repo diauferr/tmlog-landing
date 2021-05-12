@@ -138,27 +138,28 @@ const CONTACT_DATA = {
 };
 
 const SOCIAL_DATA = {
-    HEADING: "Find us on social media",
+    HEADING: "Nos encontre nas mídias sociais:",
     IMAGES_LIST: [
-        "images/facebook-icon.png",
-        "images/instagram-icon.png",
-        "images/whatsapp-icon.png",
-        "images/twitter-icon.png",
-        "images/linkedin-icon.png",
-        "images/snapchat-icon.png"
+        "instagram.svg",
+        "twitter.svg",
+        "linkedin.svg",
     ]
 };
 
 const FOOTER_DATA = {
-    DESCRIPTION: "We are typically focused on result-based maketing in the digital world. Also, we evaluate your brand’s needs and develop a powerful strategy that maximizes profits.",
+    IMAGE_URL: "logo-full-white.svg",
+    DESCRIPTION: "Nossa logística movimentando seu negócio",
+    IMAGE_LOCAL: "local.svg",
     CONTACT_DETAILS: {
-        HEADING: "Contact us",
-        ADDRESS: "La trobe street docklands, Melbourne",
-        MOBILE: "+1 61234567890",
-        EMAIL: "nixalar@gmail.com"
+        CITY: "SANTO ANDRÉ-SP",
+        STREET: "Rua Giovanni Battista Pirelli, 270, Sala 207",
+        STREET2: "Vila Homero Thon, CEP 09111-340",
+        TEL: "+55 11 4978-5939",
+        CEL: "+55 11 98342-0044",
+        EMAIL: "contato@tmlog.com.br"
     },
-    SUBSCRIBE_NEWSLETTER: "Subscribe newsletter",
-    SUBSCRIBE: "Subscribe"
+    CREDITS: "Feito por Diego Augusto",
+    CREDITS_EMAIL: "diaugustdev@gmail.com"
 };
 
 const MOCK_DATA = {
