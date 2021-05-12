@@ -30,7 +30,7 @@ const {
         <label for="email-address">{EMAIL_LIST[1]}</label>
         <input type="email" name="_replyto" id="email-address" placeholder="email@dominio.com" required>
         <label for="phone">{EMAIL_LIST[2]}</label>
-        <input type="number" name="Telefone" id="phone" placeholder="11 00000-0000" required>
+        <input type="text" name="Telefone" id="phone" placeholder="11 00000-0000" required>
         <fieldset id="fs-frm-selects">
             <label for="timely">1. {EMAIL_LIST[3]}</label>
             <select name="Tipo de serviço" id="timely" required>
@@ -52,7 +52,7 @@ const {
             placeholder="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium perferendis perspiciatis dolor similique explicabo. Deserunt, vitae?"
             required=""></textarea>
         <fieldset id="fs-frm-selects">
-            <label for="importer">1. {EMAIL_LIST[7]}</label>
+            <label for="importer">{EMAIL_LIST[7]}</label>
             <select name="Já realizou transporte internacional?" id="importer" required>
                 <option value={SERVICES_LIST[0]} selected="" disabled="">{SERVICES_LIST[0]}</option>
                 <option value={IMPORTER_LIST[0]}>{IMPORTER_LIST[0]}</option>

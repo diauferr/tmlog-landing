@@ -16,7 +16,7 @@ const {
     <h3 class="text-center font-medium px-8 pb-6 md:px-36 lg:px-48 xl:px-96">{DESCRIPTION}</h3>
     <div class="flex flex-col lg:flex-row">
         {#each SOLUTIONS_LIST as list}
-        <div class="flex flex-col justify-center items-center m-6 p-6 md:mx-24 lg:m-12 rounded-md shadow-lg text-white" id="card">
+        <div class="flex flex-col justify-center items-center m-6 p-6 md:mx-24 lg:m-14 rounded-md shadow-lg text-white" id="card">
             <div class="w-max p-7 rounded-full bg-white">
                 <img src={list.URL} alt={list.LABEL} class="" />
             </div>

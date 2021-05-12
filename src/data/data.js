@@ -64,6 +64,12 @@ const SOLUTIONS_DATA = {
             DESCRIPTION: "O serviço de transporte rodoviário da TMLOG proporciona tranquilidade e segurança para os seus negócios.",
             URL: "trucklogo.svg",
             PAGE: "/solutions/truck"
+        },
+        {
+            LABEL: "LOGÍSTICA INTEGRADA",
+            DESCRIPTION: "Através dos serviços de Logística Integrada TMLOG, você conta com profissionais aptos a gerenciar, transportar, armazenar e distribuir sua carga de forma eficiente e segura.",
+            URL: "supply-chain.svg",
+            PAGE: "/solutions/integrated"
         }
     ]
 };
