@@ -64,7 +64,7 @@ const {
             </fieldset>
             <input type="hidden" name="_subject" id="email-subject" value="Solicitar Cotação">
         </fieldset>
-        <input type="submit" value={EMAIL_LIST[8]} id="submit" class="uppercase font-bold">
+        <input type="submit" value={EMAIL_LIST[8]} id="submit" class="uppercase font-semibold">
     </form>
 </div>
 
@@ -90,7 +90,8 @@ p {
 }
 
 #submit {
-    color: #3D4DA1;
+    background-color: #3D4DA1 !important;
+    color: #fff !important;
 }
 
 textarea {
