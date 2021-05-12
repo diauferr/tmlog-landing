@@ -4,7 +4,7 @@
 
 <div class="flex flex-col w-full h-auto pb-48 sm:pb-96 xl:pb-120 pt-6 bg-contain md:bg-cover bg-bottom bg-no-repeat" id="hero">
         {#each slogans as slogan}
-        <h1 class="pb-3 mr-6 text-3xl sm:text-5xl font-opensans font-semibold text-right uppercase">{slogan.text}</h1>
+        <h1 class="pb-3 mr-6 text-3xl sm:text-5xl font-opensans text-right uppercase font-bold">{slogan.text}</h1>
         {/each}
 </div>
 <img src="/wave.svg" alt="" class="w-full">
