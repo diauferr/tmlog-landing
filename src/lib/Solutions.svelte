@@ -11,7 +11,7 @@ const {
 <div class="w-full h-auto" id="solutions">
     <div class="flex flex-row justify-center items-center">
         <img src="/think.svg" alt="" id="think">
-        <h1 class="text-4xl font-semibold text-center py-5 font-opensans">{HEADING}</h1>
+        <h1 class="text-3xl font-semibold text-center py-5 font-opensans uppercase">{HEADING}</h1>
     </div>
     <h3 class="text-center font-medium px-8 pb-6 md:px-36 lg:px-48 xl:px-96">{DESCRIPTION}</h3>
     <div class="flex flex-col lg:flex-row">

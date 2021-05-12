@@ -97,6 +97,40 @@ const VALUES_DATA = {
     ]
 };
 
+const CONTACT_DATA = {
+    HEADING: "Entre em contato",
+    DESCRIPTION: [
+        "Preencha o formulário e receba uma cotação personalizada para a sua operação:",
+        "Você pode garantir toda a eficiência e segurança que a sua operação logística precisa. Entre em contato com a TMLOG para entender como podemos ajudar.",
+        "Preencha o formulário e nossa equipe fará contato com uma oferta que cumpra seu prazo e com valor adequado ao seu negócio."
+    ],
+    IMAGE_URL: "/form",
+    EMAIL_LIST: [
+        "Nome Completo",
+        "Endereço de Email",
+        "Telefone",
+        "Serviço desejado",
+        "Qual a origem da carga?",
+        "Qual o destino da carga?",
+        "Descrição da carga",
+        "Já realizou transporte internacional?",
+        "Solicitar cotação"
+    ],
+    SERVICES_LIST: [
+        "Selecionar",
+        "Importação Marítima",
+        "Exportação Marítima",
+        "Importação Aérea",
+        "Exportação Aérea",
+        "Importação Rodoviária",
+        "Exportação Rodoviária"
+    ],
+    IMPORTER_LIST: [
+        "Sim",
+        "Não"
+    ]
+};
+
 const SOCIAL_DATA = {
     HEADING: "Find us on social media",
     IMAGES_LIST: [
@@ -129,6 +163,7 @@ const MOCK_DATA = {
     SOLUTIONS_DATA,
     ABOUT_DATA,
     VALUES_DATA,
+    CONTACT_DATA,
     SOCIAL_DATA,
     FOOTER_DATA
 };
