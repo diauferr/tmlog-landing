@@ -10,6 +10,16 @@ const {
     SERVICES_LIST,
     IMPORTER_LIST
 } = contactData;
+
+import { getContext } from 'svelte';
+    import Surprise from './Surprise.svelte';
+  
+    const { open } = getContext('simple-modal');
+  
+    const showSurprise = () => {
+      open(Surprise, { message: "Cotação enviada!" });
+    };
+
 </script>
 
 <div class="w-full h-auto py-4" id="wrap">
@@ -24,9 +34,9 @@ const {
         <p class="text-center px-8 pb-6 md:px-36 lg:px-48 xl:px-96">{DESCRIPTION[2]}</p>
     </div>
 
-    <form id="fs-frm" target="_blank" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/xqkwpaje"
+    <form id="fs-frm" target="formSubmitFrame" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/xqkwpaje"
         method="post"
-        class="mx-4 my-0 md:mx-24 lg:mx-48 xl:mx-52 2xl:mx-96 py-6 px-6 md:px-36 lg:px-36 xl:px-36 font-opensans font-semibold rounded-md">
+        class="mx-4 my-0 md:mx-24 lg:mx-48 xl:mx-52 2xl:mx-96 py-6 px-6 md:px-36 lg:px-36 xl:px-36 font-opensans font-semibold rounded-md" on:submit={showSurprise}>
         <fieldset id="fs-frm-inputs">
             <label for="full-name" id="margin">{EMAIL_LIST[0]}</label>
             <input type="text" name="Nome" id="full-name" placeholder="Primeiro e último nome" required>
@@ -62,20 +72,59 @@ const {
                     <option value={IMPORTER_LIST[1]}>{IMPORTER_LIST[1]}</option>
                 </select>
             </fieldset>
-            <input type="hidden" name="_subject" id="email-subject" value="Solicitar Cotação">
+            <input type="hidden" name="_subject" id="email-subject" value="Nova cotação solicitada:">
         </fieldset>
-        <input type="submit" value={EMAIL_LIST[8]} id="submit" class="uppercase font-semibold">
+        <input type="submit" value={EMAIL_LIST[8]} id="submit" class="uppercase font-semibold slide-hover-left-1">
+        <iframe name="formSubmitFrame" tile="Holds Submitted form data" rel="nofollow" class="d-none"></iframe>
     </form>
 </div>
 
 <style>
 
-    #wrap {
-        background-image: url("/cheese3.svg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    iframe {
+        height: 0px;
+        width: 0px;
     }
+
+#wrap {
+    background-image: url("/cheese3.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input[type="submit"] {
+    border: 1px solid #3D4DA1 !important;
+    background-color: transparent !important;
+    color: #3D4DA1 !important;
+    padding: 20px 60px !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    background: transparent !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    margin-right: 15px !important;
+    margin-bottom: 30px !important;
+    border-radius: 3px !important;
+    text-transform: uppercase !important;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+
+input.slide-hover-left-1 {
+    background-image: linear-gradient(0, #3D4DA1, #3D4DA1) !important;
+    background-size: 0 !important;
+    transition: .8s !important;
+    background-repeat: no-repeat !important;
+}
+
+input.slide-hover-left-1:hover {
+    background-size: 100% !important;
+    color: #fff !important;
+}
 
 h1 {
     color: #3D4DA1;
@@ -89,13 +138,18 @@ p {
     color: #3D4DA1;
 }
 
-#submit {
+/* #submit {
     background-color: #3D4DA1 !important;
     color: #fff !important;
 }
 
+#submit:hover {
+    background-color: #fff !important;
+    color: #3D4DA1 !important;
+} */
+
 textarea {
-   resize: none;
+    resize: none;
 }
 
 img {
@@ -105,122 +159,124 @@ img {
 form {
     background-color: white;
 }
-  #fs-frm input,
-  #fs-frm select,
-  #fs-frm textarea,
-  #fs-frm fieldset,
-  #fs-frm optgroup,
-  #fs-frm label,
-  #fs-frm #card-element:disabled {
-      font-family: inherit;
-      font-size: 100%;
-      color: #3D4DA1;
-      border: none;
-      border-radius: 0;
-      display: block;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-  }
 
-  #fs-frm label,
-  #fs-frm legend,
-  #fs-frm ::placeholder {
-      font-size: .825rem;
-      margin-bottom: .5rem;
-      padding-top: .2rem;
-      display: flex;
-      align-items: baseline;
-  }
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+    font-family: inherit;
+    font-size: 100%;
+    color: #3D4DA1;
+    border: none;
+    border-radius: 0;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
 
-  /* border, padding, margin, width */
-  #fs-frm input,
-  #fs-frm select,
-  #fs-frm textarea,
-  #fs-frm #card-element {
-      border: 1px solid rgba(0, 0, 0, 0.2);
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: .75em 1rem;
-      margin-bottom: 1.5rem;
-  }
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::placeholder {
+    font-size: .825rem;
+    margin-bottom: .5rem;
+    padding-top: .2rem;
+    display: flex;
+    align-items: baseline;
+}
 
-  #fs-frm input:focus,
-  #fs-frm select:focus,
-  #fs-frm textarea:focus {
-      background-color: white;
-      outline-style: solid;
-      outline-width: thin;
-      outline-color: #3D4DA1;
-      outline-offset: -1px;
-  }
+/* border, padding, margin, width */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm #card-element {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: .75em 1rem;
+    margin-bottom: 1.5rem;
+}
 
-  #fs-frm [type="text"],
-  #fs-frm [type="email"] {
-      width: 100%;
-  }
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+    background-color: white;
+    outline-style: solid;
+    outline-width: thin;
+    outline-color: #3D4DA1;
+    outline-offset: -1px;
+}
 
-  #fs-frm [type="button"],
-  #fs-frm [type="submit"],
-  #fs-frm [type="reset"] {
-      width: auto;
-      cursor: pointer;
-      -webkit-appearance: button;
-      -moz-appearance: button;
-      appearance: button;
-  }
+#fs-frm [type="text"],
+#fs-frm [type="email"] {
+    width: 100%;
+}
 
-  #fs-frm [type="button"]:focus,
-  #fs-frm [type="submit"]:focus,
-  #fs-frm [type="reset"]:focus {
-      outline: none;
-  }
+#fs-frm [type="button"],
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+    width: auto;
+    cursor: pointer;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+}
 
-  #fs-frm [type="submit"],
-  #fs-frm [type="reset"] {
-      margin-bottom: 0;
-  }
+#fs-frm [type="button"]:focus,
+#fs-frm [type="submit"]:focus,
+#fs-frm [type="reset"]:focus {
+    outline: none;
+}
 
-  #fs-frm select {
-      text-transform: none;
-  }
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+    margin-bottom: 0;
+}
 
-  #fs-frm [type="checkbox"] {
-      -webkit-appearance: checkbox;
-      -moz-appearance: checkbox;
-      appearance: checkbox;
-      display: inline-block;
-      width: auto;
-      margin: 0 .5em 0 0 !important;
-  }
+#fs-frm select {
+    text-transform: none;
+}
 
-  #fs-frm [type="radio"] {
-      -webkit-appearance: radio;
-      -moz-appearance: radio;
-      appearance: radio;
-  }
+#fs-frm [type="checkbox"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    appearance: checkbox;
+    display: inline-block;
+    width: auto;
+    margin: 0 .5em 0 0 !important;
+}
 
-  #fs-frm fieldset.locale input[name="city"],
-  #fs-frm fieldset.locale select[name="state"],
-  #fs-frm fieldset.locale input[name="postal-code"] {
-      display: inline;
-  }
+#fs-frm [type="radio"] {
+    -webkit-appearance: radio;
+    -moz-appearance: radio;
+    appearance: radio;
+}
 
-  #fs-frm fieldset.locale input[name="city"] {
-      width: 52%;
-  }
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+    display: inline;
+}
 
-  #fs-frm fieldset.locale select[name="state"],
-  #fs-frm fieldset.locale input[name="postal-code"] {
-      width: 20%;
-  }
+#fs-frm fieldset.locale input[name="city"] {
+    width: 52%;
+}
 
-  #fs-frm fieldset.locale input[name="city"],
-  #fs-frm fieldset.locale select[name="state"] {
-      margin-right: 3%;
-  }
-  </style>
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+    width: 20%;
+}
+
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"] {
+    margin-right: 3%;
+}
+
+</style>
 
 
 
