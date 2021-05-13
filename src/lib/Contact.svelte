@@ -18,7 +18,6 @@ import { getContext } from 'svelte';
   
     const showSurprise = () => {
       open(Surprise, { message: "Cotação enviada!" });
-      document.survey-form.reset(); 
     };
 
 </script>
@@ -98,7 +97,6 @@ input[type="submit"] {
     border: 1px solid #3D4DA1 !important;
     background-color: transparent !important;
     color: #3D4DA1 !important;
-    padding: 20px 60px !important;
     font-size: 18px !important;
     font-weight: 600 !important;
     background: transparent !important;
