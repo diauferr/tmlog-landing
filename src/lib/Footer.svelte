@@ -31,7 +31,6 @@ const {
                 <h1>{CONTACT_DETAILS.STREET}</h1>
                 <h1>{CONTACT_DETAILS.STREET2}</h1>
                 <h1>{CONTACT_DETAILS.TEL}</h1>
-                <h1>{CONTACT_DETAILS.CEL}</h1>
                 <h1>{CONTACT_DETAILS.EMAIL}</h1>
             </div>
         </div>

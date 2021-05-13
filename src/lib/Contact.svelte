@@ -18,6 +18,7 @@ import { getContext } from 'svelte';
   
     const showSurprise = () => {
       open(Surprise, { message: "Cotação enviada!" });
+      document.survey-form.reset(); 
     };
 
 </script>
@@ -103,8 +104,8 @@ input[type="submit"] {
     background: transparent !important;
     cursor: pointer !important;
     display: inline-block !important;
-    margin-right: 15px !important;
-    margin-bottom: 30px !important;
+    margin-right: 1px !important;
+    margin-bottom: 1px !important;
     border-radius: 3px !important;
     text-transform: uppercase !important;
 }
