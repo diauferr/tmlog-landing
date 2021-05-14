@@ -18,6 +18,7 @@ import { getContext } from 'svelte';
   
     const showSurprise = () => {
       open(Surprise, { message: "Cotação enviada!" });
+      document.getElementById("fs-frm").reset();
     };
 
 </script>
