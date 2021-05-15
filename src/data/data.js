@@ -1,6 +1,8 @@
 /**src/Data/data.js**/
 const HEADER = "logo-full.svg";
 
+const HEADER_NESTED = "../logo-full.svg"
+
 const NAVBAR_DATA = [{
         id: 1,
         url: "/",
@@ -24,6 +26,8 @@ const NAVBAR_DATA = [{
 ];
 
 const MENU = "menu.svg";
+
+const MENU_NESTED ="../menu.svg";
 
 const HERO_SLOGAN = [{
         id: 1,
@@ -164,7 +168,9 @@ const FOOTER_DATA = {
 
 const MOCK_DATA = {
     HEADER,
+    HEADER_NESTED,
     MENU,
+    MENU_NESTED,
     NAVBAR_DATA,
     HERO_SLOGAN,
     SOLUTIONS_DATA,

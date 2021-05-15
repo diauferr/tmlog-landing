@@ -35,7 +35,7 @@ import { getContext } from 'svelte';
         <p class="text-center px-8 pb-6 md:px-36 lg:px-48 xl:px-96">{DESCRIPTION[2]}</p>
     </div>
 
-    <form id="fs-frm" target="formSubmitFrame" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/xqkwpaje"
+    <form id="fs-frm" target="formSubmitFrame" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/mbjqgkky"
         method="post"
         class="mx-4 my-0 md:mx-24 lg:mx-48 xl:mx-52 2xl:mx-96 py-6 px-6 md:px-36 lg:px-36 xl:px-36 font-opensans font-semibold rounded-md" on:submit={showSurprise}>
         <fieldset id="fs-frm-inputs">
@@ -277,64 +277,3 @@ form {
 }
 
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="w-full h-auto">
-    <form class="flex flex-col p-8" action="https://formspree.io/f/xqkwpaje" method="POST">
-        <label class="bg-gray-300 flex flex-col mb-4 p-3 shadow-lg rounded-md text-white">
-            {EMAIL_LIST[0]}
-            <input class="text-black p-2" type="text" name="Nome" required>
-        </label>
-        <label class="bg-gray-300 flex flex-col mb-4 p-3 shadow-lg rounded-md text-white">
-            {EMAIL_LIST[1]}
-            <input class="text-black p-2" type="email" name="_replyto" required>
-        </label>
-        <label class="bg-gray-300 flex flex-col mb-8 p-3 shadow-lg rounded-md text-white">
-            {EMAIL_LIST[4]}
-            <textarea class="h-96 p-2 rounded-md text-black" name="Mensagem" required></textarea>
-        </label>
-
-        <button class="mb-8 shadow-lg w-min p-3 px-14 text-white rounded-md self-center" type="submit">{EMAIL_LIST[5]}</button>
-    </form>
-</div>
-
-<style>
-
-label {
-    background-color: #3D4DA1;
-    background-color: #FFF38A;
-}
-
-button {
-    background-color: #3D4DA1;
-}
-
-input:focus {
-    outline: none !important;
-    border: 1px transparent red;
-    box-shadow: 0 0 10px #719ECE;
-}
-
-textarea:focus {
-    outline: none !important;
-    border: 1px transparent red;
-    box-shadow: 0 0 10px #719ECE;
-}
-
-</style> -->
