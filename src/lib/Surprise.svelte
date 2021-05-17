@@ -62,7 +62,7 @@ import Saos from 'saos/src/Saos.svelte';
 
 </script>
 
-<Saos animation={'scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}>
+<Saos animation={'scale-in-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}>
 <div class="surprise w-auto h-autoflex flex-col items-center justify-center">
   <h1 class="text-2xl lg:text-4xl text-center font-semibold">
     {message} 🎉

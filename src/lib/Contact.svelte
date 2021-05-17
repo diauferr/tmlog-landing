@@ -81,7 +81,7 @@ import { getContext } from 'svelte';
         <iframe name="formSubmitFrame" tile="Holds Submitted form data" rel="nofollow" class="d-none"></iframe>
     </form>
 </Saos>
-<button on:click={showSurprise}>test</button>
+<!-- <button on:click={showSurprise}>test</button> -->
 </div>
 
 <style>
