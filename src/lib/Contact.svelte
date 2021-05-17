@@ -1,5 +1,6 @@
 <script>
 
+import Saos from 'saos/src/Saos.svelte';
 export let contactData = {};
 
 const {
@@ -35,6 +36,7 @@ import { getContext } from 'svelte';
         <p class="text-center px-8 pb-6 md:px-36 lg:px-48 xl:px-96">{DESCRIPTION[2]}</p>
     </div>
 
+    <Saos animation={'scale-in-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}>
     <form id="fs-frm" target="formSubmitFrame" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/mbjqgkky"
         method="post"
         class="mx-4 my-0 md:mx-24 lg:mx-48 xl:mx-52 2xl:mx-96 py-6 px-6 md:px-36 lg:px-36 xl:px-36 font-opensans font-semibold rounded-md" on:submit={showSurprise}>
@@ -78,6 +80,8 @@ import { getContext } from 'svelte';
         <input type="submit" value={EMAIL_LIST[8]} id="submit" class="uppercase font-semibold slide-hover-left-1">
         <iframe name="formSubmitFrame" tile="Holds Submitted form data" rel="nofollow" class="d-none"></iframe>
     </form>
+</Saos>
+<button on:click={showSurprise}>test</button>
 </div>
 
 <style>
@@ -276,4 +280,216 @@ form {
     margin-right: 3%;
 }
 
+@keyframes -global-from-left {
+    0% {
+        transform: rotateX(50deg) translateX(-200vw) skewX(-50deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotateX(0deg) translateX(0) skewX(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes -global-scale-in-center {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes -global-rotate-in-center {
+    0% {
+      transform: rotate(-360deg);
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(0);
+      opacity: 1;
+    }
+  }
+  @keyframes -global-slide-in-top {
+    0% {
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes -global-slide-in-fwd-tr {
+    0% {
+      transform: translateZ(-1200px) translateY(-700px) translateX(500px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateZ(0) translateY(0) translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes -global-slide-in-elliptic-top-fwd {
+    0% {
+      transform: translateY(-600px) rotateX(-30deg) scale(0);
+      transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) rotateX(0) scale(1);
+      transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+  }
+  @keyframes -global-roll-in-left {
+    0% {
+      transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes -global-roll-in-blurred-left {
+    0% {
+      transform: translateX(-1000px) rotate(-720deg);
+      filter: blur(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0) rotate(0deg);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes -global-tilt-in-fwd-tr {
+    0% {
+      transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px)
+        skew(-35deg, 10deg);
+      opacity: 0;
+    }
+    100% {
+      transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes -global-swing-in-top-fwd {
+    0% {
+      transform: rotateX(-100deg);
+      transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      transform: rotateX(0deg);
+      transform-origin: top;
+      opacity: 1;
+    }
+  }
+  @keyframes -global-puff-in-center {
+    0% {
+      transform: scale(2);
+      filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes -global-fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /* EXITS */
+  @keyframes -global-scale-out-center {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 1;
+    }
+  }
+  @keyframes -global-rotate-out-center {
+    0% {
+      transform: rotate(0);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(-360deg);
+      opacity: 0;
+    }
+  }
+  @keyframes -global-rotate-out-2-cw {
+    0% {
+      transform: rotate(0);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(45deg);
+      opacity: 0;
+    }
+  }
+  @keyframes -global-swirl-out-bck {
+    0% {
+      transform: rotate(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(-540deg) scale(0);
+      opacity: 0;
+    }
+  }
+  @keyframes -global-flip-out-hor-top {
+    0% {
+      transform: rotateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: rotateX(70deg);
+      opacity: 0;
+    }
+  }
+  @keyframes -global-slide-out-top {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+  }
+  @keyframes -global-slide-out-fwd-center {
+    0% {
+      transform: translateZ(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateZ(600px);
+      opacity: 0;
+    }
+  }
+  @keyframes -global-slide-out-elliptic-top-bck {
+    0% {
+      transform: translateY(0) rotateX(0) scale(1);
+      transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-600px) rotateX(-30deg) scale(0);
+      transform-origin: 50% 100%;
+      opacity: 1;
+    }
+  }
 </style>
