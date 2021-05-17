@@ -2,6 +2,7 @@
 export let navlists = [];
 export let header;
 export let menu;
+
 </script>
 
 <section id="navbar">
