@@ -129,6 +129,13 @@ export default {
                 list6: "importação rodoviária",
                 list7: "exportação rodoviária"
             }],
+            placeholder_list: [{
+                list1: "Primeiro e último nome",
+                list2: "email@dominio.com",
+                list3: "+00 00000-0000",
+                list4: "Ex: São Paulo, BR",
+                list5: "Ex: NY, EUA",
+            }],
             importer_list: [{
                 list1: "sim",
                 list2: "não",
@@ -288,6 +295,13 @@ export default {
                 list6: "road import",
                 list7: "road export"
             }],
+            placeholder_list: [{
+                list1: "First and Last name",
+                list2: "email@domain.com",
+                list3: "+00 00000-0000",
+                list4: "Ex: NY, USA",
+                list5: "Ex: Santos, Brazil",
+            }],
             importer_list: [{
                 list1: "yes",
                 list2: "no",
@@ -446,6 +460,13 @@ export default {
                 list5: "exportação aérea",
                 list6: "importação rodoviária",
                 list7: "exportação rodoviária"
+            }],
+            placeholder_list: [{
+                list1: "Nombre y apellido",
+                list2: "email@domain.com",
+                list3: "+00 00000-0000",
+                list4: "Ex: Madrid, ES",
+                list5: "Ex: Santos, BR",
             }],
             importer_list: [{
                 list1: "sim",

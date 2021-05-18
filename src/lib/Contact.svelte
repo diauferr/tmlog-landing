@@ -1,16 +1,11 @@
 <script>
 
-import Saos from 'saos/src/Saos.svelte';
-export let contactData = {};
+import translations from '../data/translations';
+import { dict, locale, t } from '../data/i18n';
+$: languages = Object.keys(translations);
+$: dict.set(translations);
 
-const {
-    HEADING,
-    DESCRIPTION,
-    IMAGE_URL,
-    EMAIL_LIST,
-    SERVICES_LIST,
-    IMPORTER_LIST
-} = contactData;
+import Saos from 'saos/src/Saos.svelte';
 
 import { getContext } from 'svelte';
     import Surprise from './Surprise.svelte';
@@ -28,12 +23,12 @@ import { getContext } from 'svelte';
 
     <div class="" id="contact">
         <div class="flex flex-row justify-center items-center">
-            <img src={IMAGE_URL} alt="" id="think">
-            <h1 class="text-2xl md:text-3xl font-semibold text-center py-5 font-opensans uppercase">{HEADING}</h1>
+            <img src={$t('contact_data')[0].image_url} alt="" id="think">
+            <h1 class="text-2xl md:text-3xl font-semibold text-center py-5 font-opensans uppercase">{$t('contact_data')[0].heading}</h1>
         </div>
-        <h3 class="text-center font-medium px-8 pb-6 md:px-36 lg:px-48 xl:px-96 text-2xl">{DESCRIPTION[0]}</h3>
-        <p class="text-center px-8 pb-6 md:px-36 lg:px-48 xl:px-96">{DESCRIPTION[1]}</p>
-        <p class="text-center px-8 pb-6 md:px-36 lg:px-48 xl:px-96">{DESCRIPTION[2]}</p>
+        <h3 class="text-center font-medium px-8 pb-6 md:px-36 lg:px-48 xl:px-96 text-2xl">{$t('contact_data')[0].description[0].text1}</h3>
+        <p class="text-center px-8 pb-6 md:px-36 lg:px-48 xl:px-96">{$t('contact_data')[0].description[0].text2}</p>
+        <p class="text-center px-8 pb-6 md:px-36 lg:px-48 xl:px-96">{$t('contact_data')[0].description[0].text3}</p>
     </div>
 
     <Saos animation={'scale-in-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}>
@@ -41,43 +36,43 @@ import { getContext } from 'svelte';
         method="post"
         class="mx-4 my-0 md:mx-24 lg:mx-48 xl:mx-52 2xl:mx-96 py-6 px-6 md:px-36 lg:px-36 xl:px-36 font-opensans font-semibold rounded-md" on:submit={showSurprise}>
         <fieldset id="fs-frm-inputs">
-            <label for="full-name" id="margin">{EMAIL_LIST[0]}</label>
-            <input type="text" name="Nome" id="full-name" placeholder="Primeiro e último nome" required>
-            <label for="email-address">{EMAIL_LIST[1]}</label>
-            <input type="email" name="_replyto" id="email-address" placeholder="email@dominio.com" required>
-            <label for="phone">{EMAIL_LIST[2]}</label>
-            <input type="text" name="Telefone" id="phone" placeholder="11 00000-0000" required>
+            <label for="full-name" id="margin">{$t('contact_data')[0].email_list[0].list1}</label>
+            <input type="text" name="Nome" id="full-name" placeholder={$t('contact_data')[0].placeholder_list[0].list1} required>
+            <label for="email-address">{$t('contact_data')[0].email_list[0].list2}</label>
+            <input type="email" name="_replyto" id="email-address" placeholder={$t('contact_data')[0].placeholder_list[0].list2} required>
+            <label for="phone">{$t('contact_data')[0].email_list[0].list3}</label>
+            <input type="text" name="Telefone" id="phone" placeholder={$t('contact_data')[0].placeholder_list[0].list3} required>
             <fieldset id="fs-frm-selects">
-                <label for="timely">1. {EMAIL_LIST[3]}</label>
+                <label for="timely">1. {$t('contact_data')[0].email_list[0].list4}</label>
                 <select name="Tipo de serviço" id="timely" required>
-                    <option value="Choose" selected="" disabled="">{SERVICES_LIST[0]}</option>
-                    <option value={SERVICES_LIST[1]}>{SERVICES_LIST[1]}</option>
-                    <option value={SERVICES_LIST[2]}>{SERVICES_LIST[2]}</option>
-                    <option value={SERVICES_LIST[3]}>{SERVICES_LIST[3]}</option>
-                    <option value={SERVICES_LIST[4]}>{SERVICES_LIST[4]}</option>
-                    <option value={SERVICES_LIST[5]}>{SERVICES_LIST[5]}</option>
-                    <option value={SERVICES_LIST[6]}>{SERVICES_LIST[6]}</option>
+                    <option value="Choose" selected="" disabled="">{$t('contact_data')[0].services_list[0].list1}</option>
+                    <option value={$t('contact_data')[0].services_list[0].list1}>{$t('contact_data')[0].services_list[0].list2}</option>
+                    <option value={$t('contact_data')[0].services_list[0].list2}>{$t('contact_data')[0].services_list[0].list3}</option>
+                    <option value={$t('contact_data')[0].services_list[0].list3}>{$t('contact_data')[0].services_list[0].list4}</option>
+                    <option value={$t('contact_data')[0].services_list[0].list4}>{$t('contact_data')[0].services_list[0].list5}</option>
+                    <option value={$t('contact_data')[0].services_list[0].list5}>{$t('contact_data')[0].services_list[0].list6}</option>
+                    <option value={$t('contact_data')[0].services_list[0].list6}>{$t('contact_data')[0].services_list[0].list7}</option>
                 </select>
             </fieldset>
-            <label for="cargo-origin">2. {EMAIL_LIST[4]}</label>
-            <input type="text" name="Origem da carga" id="cargo-origin" placeholder="Ex: São Paulo, Brasil" required>
-            <label for="cargo-destination">3. {EMAIL_LIST[5]}</label>
-            <input type="text" name="Destino da carga" id="cargo-destination" placeholder="Ex: NY, EUA" required>
-            <label for="cargo-description">{EMAIL_LIST[6]}</label>
+            <label for="cargo-origin">2. {$t('contact_data')[0].email_list[0].list5}</label>
+            <input type="text" name="Origem da carga" id="cargo-origin" placeholder={$t('contact_data')[0].placeholder_list[0].list4} required>
+            <label for="cargo-destination">3. {$t('contact_data')[0].email_list[0].list6}</label>
+            <input type="text" name="Destino da carga" id="cargo-destination" placeholder={$t('contact_data')[0].placeholder_list[0].list5} required>
+            <label for="cargo-description">{$t('contact_data')[0].email_list[0].list7}</label>
             <textarea rows="3" name="Descrição da carga" id="message"
-                placeholder="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium perferendis perspiciatis dolor similique explicabo. Deserunt, vitae?"
+                placeholder=""
                 required=""></textarea>
             <fieldset id="fs-frm-selects">
-                <label for="importer">{EMAIL_LIST[7]}</label>
+                <label for="importer">{$t('contact_data')[0].email_list[0].list8}</label>
                 <select name="Já realizou transporte internacional?" id="importer" required>
-                    <option value={SERVICES_LIST[0]} selected="" disabled="">{SERVICES_LIST[0]}</option>
-                    <option value={IMPORTER_LIST[0]}>{IMPORTER_LIST[0]}</option>
-                    <option value={IMPORTER_LIST[1]}>{IMPORTER_LIST[1]}</option>
+                    <option value={$t('contact_data')[0].services_list[0].list1} selected="" disabled="">{$t('contact_data')[0].services_list[0].list1}</option>
+                    <option value={$t('contact_data')[0].importer_list[0].list1}>{$t('contact_data')[0].importer_list[0].list1}</option>
+                    <option value={$t('contact_data')[0].importer_list[0].list2}>{$t('contact_data')[0].importer_list[0].list2}</option>
                 </select>
             </fieldset>
             <input type="hidden" name="_subject" id="email-subject" value="Nova cotação solicitada:">
         </fieldset>
-        <input type="submit" value={EMAIL_LIST[8]} id="submit" class="uppercase font-semibold slide-hover-left-1">
+        <input type="submit" value={$t('contact_data')[0].email_list[0].list9} id="submit" class="uppercase font-semibold slide-hover-left-1">
         <iframe name="formSubmitFrame" tile="Holds Submitted form data" rel="nofollow" class="d-none"></iframe>
     </form>
 </Saos>
