@@ -14,20 +14,8 @@ import translations from '../data/translations';
   $: dict.set(translations);
 </script>
 
-<main>
-    <select bind:value={$locale}>
-      {#each languages as lang}
-        <option value={lang}>
-          {lang}
-        </option>
-      {/each}
-    </select>
-    <h1>{$t('title.helloworld')[0]}</h1>
-    <h1>{$t('title.helloworld')[1]}</h1>
-  </main>
-
-<Navbar navlists={DATA.NAVBAR_DATA} header={DATA.HEADER} menu={DATA.MENU} />
-<Hero slogans={DATA.HERO_SLOGAN}/>
+<Navbar />
+<Hero hero_slogan={translations.hero_slogan} />
 <Solutions solutionsData={DATA.SOLUTIONS_DATA}/>
 <About aboutData={DATA.ABOUT_DATA}/>
 <Values valuesData={DATA.VALUES_DATA}/>
