@@ -16,8 +16,8 @@ import translations from '../data/translations';
 
 <Navbar />
 <Hero />
-<Solutions/>
-<About aboutData={DATA.ABOUT_DATA}/>
+<Solutions />
+<About />
 <Values valuesData={DATA.VALUES_DATA}/>
 <Modal>
     <Contact contactData={DATA.CONTACT_DATA}/>

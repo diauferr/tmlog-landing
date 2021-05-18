@@ -1,29 +1,28 @@
 <script>
-import translations from '../data/translations';
-    import { dict, locale, t } from '../data/i18n';
-    $: languages = Object.keys(translations);
-    $: dict.set(translations);
-</script>
-
-<div class="w-full h-auto" id="solutions">
-    <div class="flex flex-row justify-center items-center">
-        <img src="/think.svg" alt="" id="think">
-        <h1 class="text-3xl font-semibold text-center py-5 font-opensans uppercase">{$t('solutions_data')}</h1>
-    </div>
-    <h3 class="text-center font-medium px-8 pb-6 md:px-36 lg:px-48 xl:px-96 text-2xl">{$t('solutions_data')}</h3>
-    <div class="flex flex-col xl:flex-row items-center justify-center">
-        {#each $t('solutions_data') as list}
-        <div class="flex flex-col justify-center items-center m-6 p-6 md:mx-24 lg:m-14 rounded-md shadow-lg text-white md:max-w-xl" id="card" style="min-height: 500px;">
-            <div class="w-max p-7 rounded-full bg-white">
-                <img src={list.URL} alt={list.LABEL} class="" />
-            </div>
-            <h4 class="py-2 font-semibold font-opensans">{list.LABEL}</h4>
-            <p class="py-2 text-center font-opensans">{list.DESCRIPTION}</p>
-            <a class="py-2 underline font-medium font-opensans" href={list.PAGE}>{$t('solutions_data')}</a>
-        </div>
-        {/each}
-    </div>
-</div>
+  import translations from '../data/translations';
+      import { dict, locale, t } from '../data/i18n';
+      $: dict.set(translations);
+  </script>
+  
+  <div class="w-full h-auto" id="solutions">
+      <div class="flex flex-row justify-center items-center">
+          <img src="/think.svg" alt="" id="think">
+          <h1 class="text-3xl font-semibold text-center py-5 font-opensans uppercase">{$t('solutions_data')[0].heading}</h1>
+      </div>
+      <h3 class="text-center font-medium px-8 pb-6 md:px-36 lg:px-48 xl:px-96 text-2xl">{$t('solutions_data')[0].description}</h3>
+      <div class="flex flex-col xl:flex-row items-center justify-center">
+          {#each $t('solutions_data')[0].solutions_list as { label, description, url, page }}
+          <div class="flex flex-col justify-center items-center m-6 p-6 md:mx-24 lg:m-14 rounded-md shadow-lg text-white md:max-w-xl" id="card" style="min-height: 500px;">
+              <div class="w-max p-7 rounded-full bg-white">
+                  <img src={url} alt={label} class="" />
+              </div>
+              <h4 class="py-2 font-semibold font-opensans">{label}</h4>
+              <p class="py-2 text-center font-opensans">{description}</p>
+              <a class="py-2 underline font-medium font-opensans" href={page}>{$t('solutions_data')[0].all_solutions}</a> <!-- Not sure what you wanted for this link text-->
+          </div>
+          {/each}
+      </div>
+  </div>
 
 <style>
 #card {

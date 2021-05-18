@@ -48,26 +48,26 @@ export default {
             description: "do sul ao nordeste brasileiro, do brasil aos principais polos logísticos internacionais. nossas soluções consolidadas em importação e exportação asseguram agilidade para intensificar e auxiliar a sua empresa na geração de negócios.",
             all_solutions: "saiba mais",
             solutions_list: [{
-                    label: "AIR FREIGHT",
-                    description: "With TMLOG's air transportation, your company has many benefits and gains a lot in the distance x time ratio.",
+                    label: "FRETE AÉREO",
+                    description: "Com o transporte aéreo da TMLOG, sua empresa tem muitos benefícios e ganha muito na relação distância x tempo.",
                     url: "airlogo.svg",
                     page: "/solutions/air"
                 },
                 {
-                    label: "SEA FREIGHT",
-                    description: "TMLOG's team has extensive knowledge and experience in this modal, providing flexible and diversified solutions.",
+                    label: "FRETE MARÍTIMO",
+                    description: "A equipe da TMLOG possui amplo conhecimento e experiência neste modal, oferecendo soluções flexíveis e diversificadas.",
                     url: "sealogo.svg",
                     page: "/solutions/sea"
                 },
                 {
-                    label: "TRUCK",
-                    description: "TMLOG's road transport service provides tranquility and safety for your business.",
+                    label: "FRETE RODOVIÁRIO",
+                    description: "O serviço de transporte rodoviário da TMLOG proporciona tranquilidade e segurança para o seu negócio.",
                     url: "trucklogo.svg",
                     page: "/solutions/truck"
                 },
                 {
-                    label: "CUSTOM",
-                    description: "Through TMLOG's Integrated Logistics services, you can count on professionals able to manage, transport, store and distribute your cargo efficiently and safely.",
+                    label: "LOGÍSTICA INTEGRADA",
+                    description: "Por meio dos serviços de Logística Integrada da TMLOG, você conta com profissionais capacitados para administrar, transportar, armazenar e distribuir sua carga com eficiência e segurança.",
                     url: "supply-chain.svg",
                     page: "/solutions/integrated"
                 }
@@ -79,7 +79,7 @@ export default {
             image_url: "teamwork.svg",
             why_choose_us_list: [{
                 text: "com o início das operações no brasil em 2021 amparado por um time com expertise em agenciamento temos como objetivo oferecer aos nossos clientes análises de cada projeto integrando viabilidade e segurança.",
-                text1: "nosso departamento de coordenação possui amplo conhecimento, gerenciando os embarques de ponta a ponta, fazendo com que os projetos fluam de forma ágil e eficaz de acordo com o perfil de cada cliente, prestando todo auxílio e suporte necessário do início ao fim do processo."
+                text: "nosso departamento de coordenação possui amplo conhecimento, gerenciando os embarques de ponta a ponta, fazendo com que os projetos fluam de forma ágil e eficaz de acordo com o perfil de cada cliente, prestando todo auxílio e suporte necessário do início ao fim do processo."
             }]
         }],
         values_data: [{
