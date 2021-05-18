@@ -77,9 +77,9 @@ export default {
             heading: "quem somos?",
             title: "somos uma empresa com foco em ajudar os clientes a tomar as melhores decisões no ramo de agenciamento de cargas.",
             image_url: "teamwork.svg",
-            why_choose_us_list: [{
-                text: "com o início das operações no brasil em 2021 amparado por um time com expertise em agenciamento temos como objetivo oferecer aos nossos clientes análises de cada projeto integrando viabilidade e segurança.",
-                text: "nosso departamento de coordenação possui amplo conhecimento, gerenciando os embarques de ponta a ponta, fazendo com que os projetos fluam de forma ágil e eficaz de acordo com o perfil de cada cliente, prestando todo auxílio e suporte necessário do início ao fim do processo."
+            why_list: [{
+                text1: "com o início das operações no brasil em 2021 amparado por um time com expertise em agenciamento temos como objetivo oferecer aos nossos clientes análises de cada projeto integrando viabilidade e segurança.",
+                text2: "nosso departamento de coordenação possui amplo conhecimento, gerenciando os embarques de ponta a ponta, fazendo com que os projetos fluam de forma ágil e eficaz de acordo com o perfil de cada cliente, prestando todo auxílio e suporte necessário do início ao fim do processo."
             }]
         }],
         values_data: [{
@@ -236,9 +236,9 @@ export default {
             heading: "who are we?",
             title: "we are a company focused on helping customers make the best decisions in the freight forwarding business.",
             image_url: "teamwork.svg",
-            why_choose_us_list: [{
-                text: "with the start of operations in brazil in 2021 supported by a team with expertise in agency services, our goal is to offer our clients analysis of each project integrating feasibility and security.",
-                text1: "Our coordination department has extensive knowledge, managing shipments from end to end, making the projects flow fast and efficiently according to each customer's profile, providing all the necessary help and support from the beginning to the end of the process."
+            why_list: [{
+                text1: "with the start of operations in brazil in 2021 supported by a team with expertise in agency services, our goal is to offer our clients analysis of each project integrating feasibility and security.",
+                text2: "Our coordination department has extensive knowledge, managing shipments from end to end, making the projects flow fast and efficiently according to each customer's profile, providing all the necessary help and support from the beginning to the end of the process."
             }]
         }],
         values_data: [{
@@ -395,9 +395,9 @@ export default {
             heading: "quem somos?",
             title: "somos uma empresa com foco em ajudar os clientes a tomar as melhores decisões no ramo de agenciamento de cargas.",
             image_url: "teamwork.svg",
-            why_choose_us_list: [{
-                text: "com o início das operações no brasil em 2021 amparado por um time com expertise em agenciamento temos como objetivo oferecer aos nossos clientes análises de cada projeto integrando viabilidade e segurança.",
-                text1: "nosso departamento de coordenação possui amplo conhecimento, gerenciando os embarques de ponta a ponta, fazendo com que os projetos fluam de forma ágil e eficaz de acordo com o perfil de cada cliente, prestando todo auxílio e suporte necessário do início ao fim do processo."
+            why_list: [{
+                text1: "com o início das operações no brasil em 2021 amparado por um time com expertise em agenciamento temos como objetivo oferecer aos nossos clientes análises de cada projeto integrando viabilidade e segurança.",
+                text2: "nosso departamento de coordenação possui amplo conhecimento, gerenciando os embarques de ponta a ponta, fazendo com que os projetos fluam de forma ágil e eficaz de acordo com o perfil de cada cliente, prestando todo auxílio e suporte necessário do início ao fim do processo."
             }]
         }],
         values_data: [{

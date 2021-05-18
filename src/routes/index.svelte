@@ -18,7 +18,7 @@ import translations from '../data/translations';
 <Hero />
 <Solutions />
 <About />
-<Values valuesData={DATA.VALUES_DATA}/>
+<Values />
 <Modal>
     <Contact contactData={DATA.CONTACT_DATA}/>
 </Modal>

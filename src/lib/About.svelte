@@ -13,8 +13,10 @@ import translations from '../data/translations';
     </div>
     <h3 class="text-center font-medium px-8 pb-6 md:px-36 lg:px-48 xl:px-96 text-2xl">{$t('about_data')[0].title}</h3>
     <div class="w-auto h-auto flex flex-col md:flex-row md:items-center mx-6 mb-3 rounded-md p-12 pb-3 text-center md:text-justify lg:mx-36 xl:mx-76 2xl:mx-96 shadow-lg" id="card">
-        {#each $t('about_data')[0].why_choose_us_list as list}
-        <h2 class="text-white md:px-12 md:pb-4">{list.text}</h2>
+        {#each  $t('about_data')[0].why_list as { text1, text2}}
+        <h2 class="text-white md:px-12 md:pb-4">{text1}</h2>
+        <br>
+        <h2 class="text-white md:px-12 md:pb-4">{text2}</h2>
         <br>
         {/each}
         <img src="/logo-mini-white.svg" alt="" id="logo-mini">
