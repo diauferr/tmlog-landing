@@ -27,16 +27,20 @@ export default {
         menu: '/menu.svg',
         menu_nested: '../menu.svg',
         hero_slogan: [{
+                id: 1,
                 text: 'Nossa'
             },
             {
-                text2: 'Logística'
+                id: 1,
+                text: 'Logística'
             },
             {
-                text3: 'Movimentando'
+                id: 1,
+                text: 'Movimentando'
             },
             {
-                text4: 'Seu negócio.'
+                id: 1,
+                text: 'Seu negócio.'
             }
         ],
         solutions_data: [{
@@ -342,7 +346,7 @@ export default {
         menu_nested: '../menu.svg',
         hero_slogan: [{
                 id: 1,
-                text: 'Nossa'
+                text: 'Nuestra'
             },
             {
                 id: 1,
@@ -350,11 +354,11 @@ export default {
             },
             {
                 id: 1,
-                text: 'Movimentando'
+                text: 'Mueve'
             },
             {
                 id: 1,
-                text: 'Seu negócio.'
+                text: 'su negocio.'
             }
         ],
         solutions_data: [{

@@ -15,8 +15,8 @@ import translations from '../data/translations';
 </script>
 
 <Navbar />
-<Hero hero_slogan={translations.hero_slogan} />
-<Solutions solutionsData={DATA.SOLUTIONS_DATA}/>
+<Hero />
+<Solutions/>
 <About aboutData={DATA.ABOUT_DATA}/>
 <Values valuesData={DATA.VALUES_DATA}/>
 <Modal>
