@@ -3,6 +3,11 @@ export let navlists = [];
 export let header;
 export let menu;
 
+import translations from '../data/translations';
+  import { dict, locale, t } from '../data/i18n';
+  $: languages = Object.keys(translations);
+  $: dict.set(translations);
+
 </script>
 
 <section id="navbar">
@@ -10,9 +15,9 @@ export let menu;
         <img class="p-2" src={header}>
         <div class="w-auto flex items-center hidden md:flex">
             <ul class="flex justify-around items-center font-opensans">
-                {#each navlists as list}
+                {#each $t('navbar.label') as label}
                 <li class="m-3 text-lg uppercase">
-                    <a class="" href={list.url}>{list.label}</a>
+                    <a href="#">{$t('label')}</a>
                 </li>
                 {/each}
             </ul>
