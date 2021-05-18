@@ -20,7 +20,7 @@ import translations from '../data/translations';
 <About />
 <Values />
 <Modal>
-    <Contact contactData={DATA.CONTACT_DATA}/>
+    <Contact/>
 </Modal>
 <Footer footerData={DATA.FOOTER_DATA} socialData={DATA.SOCIAL_DATA}/>
 
